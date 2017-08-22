@@ -23,6 +23,9 @@
 		04B028EB1F4A320600164A9B /* CollectionViewSectionHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B028EA1F4A320600164A9B /* CollectionViewSectionHeaderViewModel.swift */; };
 		04B028ED1F4A324400164A9B /* CollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B028EC1F4A324400164A9B /* CollectionViewCellViewModel.swift */; };
 		04B028EF1F4A329300164A9B /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B028EE1F4A329300164A9B /* CollectionViewModel.swift */; };
+		04B0291F1F4C100C00164A9B /* CollectionViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0291E1F4C100C00164A9B /* CollectionViewControllerProtocol.swift */; };
+		04B029211F4C109700164A9B /* CollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B029201F4C109700164A9B /* CollectionViewCellProtocol.swift */; };
+		04B029231F4C10F800164A9B /* CollectionViewSectionHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B029221F4C10F800164A9B /* CollectionViewSectionHeaderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		04B028EA1F4A320600164A9B /* CollectionViewSectionHeaderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionHeaderViewModel.swift; sourceTree = "<group>"; };
 		04B028EC1F4A324400164A9B /* CollectionViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		04B028EE1F4A329300164A9B /* CollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		04B0291E1F4C100C00164A9B /* CollectionViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerProtocol.swift; sourceTree = "<group>"; };
+		04B029201F4C109700164A9B /* CollectionViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellProtocol.swift; sourceTree = "<group>"; };
+		04B029221F4C10F800164A9B /* CollectionViewSectionHeaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionHeaderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 		04B028DA1F4A2C3400164A9B /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				04B0291E1F4C100C00164A9B /* CollectionViewControllerProtocol.swift */,
+				04B029201F4C109700164A9B /* CollectionViewCellProtocol.swift */,
+				04B029221F4C10F800164A9B /* CollectionViewSectionHeaderProtocol.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -266,12 +275,15 @@
 				04B028B71F4A283D00164A9B /* ViewController.swift in Sources */,
 				04B028E01F4A2CDC00164A9B /* City.swift in Sources */,
 				04B028E81F4A300800164A9B /* CollectionViewSectionHeader.swift in Sources */,
+				04B029211F4C109700164A9B /* CollectionViewCellProtocol.swift in Sources */,
+				04B029231F4C10F800164A9B /* CollectionViewSectionHeaderProtocol.swift in Sources */,
 				04B028E61F4A2FC200164A9B /* CollectionViewCell.swift in Sources */,
 				04B028B51F4A283D00164A9B /* AppDelegate.swift in Sources */,
 				04B028EB1F4A320600164A9B /* CollectionViewSectionHeaderViewModel.swift in Sources */,
 				04B028EF1F4A329300164A9B /* CollectionViewModel.swift in Sources */,
 				04B028E21F4A2CE900164A9B /* Photo.swift in Sources */,
 				04B028E41F4A2D1700164A9B /* Album.swift in Sources */,
+				04B0291F1F4C100C00164A9B /* CollectionViewControllerProtocol.swift in Sources */,
 				04B028ED1F4A324400164A9B /* CollectionViewCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
