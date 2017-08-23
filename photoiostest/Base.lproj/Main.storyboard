@@ -12,7 +12,7 @@
         <!--Collection View Controller-->
         <scene sceneID="tFy-4u-QsQ">
             <objects>
-                <collectionViewController id="MUL-ue-fgD" sceneMemberID="viewController">
+                <collectionViewController id="MUL-ue-fgD" customClass="CollectionViewController" customModule="photoiostest" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="wlP-Y2-49q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kBY-P9-8X1" customClass="CollectionViewCell" customModule="photoiostest" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewSectionHeader" id="kBY-P9-8X1" customClass="CollectionViewCell" customModule="photoiostest">
                                 <rect key="frame" x="3" y="0.0" width="370" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -47,11 +47,11 @@
                                 </constraints>
                                 <size key="customSize" width="370" height="44"/>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="M7f-OL-bMy">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="M7f-OL-bMy" customClass="CollectionViewCell" customModule="photoiostest" customModuleProvider="target">
                                 <rect key="frame" x="2.5" y="54" width="370" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="371" height="231"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="231"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OLi-Z8-iJL">
