@@ -33,6 +33,7 @@
 		04B029291F4D6A6800164A9B /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B028DF1F4A2CDC00164A9B /* City.swift */; };
 		04B0292A1F4D6A6B00164A9B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B028E11F4A2CE900164A9B /* Photo.swift */; };
 		04B0292B1F4D6A6E00164A9B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B028E31F4A2D1700164A9B /* Album.swift */; };
+		04B0292D1F4F910400164A9B /* CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0292C1F4F910400164A9B /* CityTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		04B029201F4C109700164A9B /* CollectionViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellProtocol.swift; sourceTree = "<group>"; };
 		04B029221F4C10F800164A9B /* CollectionViewSectionHeaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionHeaderProtocol.swift; sourceTree = "<group>"; };
 		04B029241F4D6A3C00164A9B /* AlbumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
+		04B0292C1F4F910400164A9B /* CityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			children = (
 				04B028C91F4A283E00164A9B /* photoiostestTests.swift */,
 				04B029241F4D6A3C00164A9B /* AlbumTests.swift */,
+				04B0292C1F4F910400164A9B /* CityTests.swift */,
 				04B028CB1F4A283E00164A9B /* Info.plist */,
 			);
 			path = photoiostestTests;
@@ -308,6 +311,7 @@
 				04B029271F4D6A6200164A9B /* CollectionViewCell.swift in Sources */,
 				04B029261F4D6A5F00164A9B /* CollectionViewSectionHeader.swift in Sources */,
 				04B029281F4D6A6400164A9B /* CollectionViewController.swift in Sources */,
+				04B0292D1F4F910400164A9B /* CityTests.swift in Sources */,
 				04B0292B1F4D6A6E00164A9B /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
