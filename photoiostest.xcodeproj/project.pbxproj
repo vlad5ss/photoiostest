@@ -34,6 +34,7 @@
 		04B0292A1F4D6A6B00164A9B /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B028E11F4A2CE900164A9B /* Photo.swift */; };
 		04B0292B1F4D6A6E00164A9B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B028E31F4A2D1700164A9B /* Album.swift */; };
 		04B0292D1F4F910400164A9B /* CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0292C1F4F910400164A9B /* CityTests.swift */; };
+		04B0292F1F54685000164A9B /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0292E1F54685000164A9B /* PhotoTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		04B029221F4C10F800164A9B /* CollectionViewSectionHeaderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewSectionHeaderProtocol.swift; sourceTree = "<group>"; };
 		04B029241F4D6A3C00164A9B /* AlbumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
 		04B0292C1F4F910400164A9B /* CityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTests.swift; sourceTree = "<group>"; };
+		04B0292E1F54685000164A9B /* PhotoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				04B028C91F4A283E00164A9B /* photoiostestTests.swift */,
+				04B0292E1F54685000164A9B /* PhotoTests.swift */,
 				04B029241F4D6A3C00164A9B /* AlbumTests.swift */,
 				04B0292C1F4F910400164A9B /* CityTests.swift */,
 				04B028CB1F4A283E00164A9B /* Info.plist */,
@@ -306,6 +309,7 @@
 			files = (
 				04B0292A1F4D6A6B00164A9B /* Photo.swift in Sources */,
 				04B028CA1F4A283E00164A9B /* photoiostestTests.swift in Sources */,
+				04B0292F1F54685000164A9B /* PhotoTests.swift in Sources */,
 				04B029251F4D6A3C00164A9B /* AlbumTests.swift in Sources */,
 				04B029291F4D6A6800164A9B /* City.swift in Sources */,
 				04B029271F4D6A6200164A9B /* CollectionViewCell.swift in Sources */,
