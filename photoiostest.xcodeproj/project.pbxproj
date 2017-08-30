@@ -36,6 +36,7 @@
 		04B0292D1F4F910400164A9B /* CityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0292C1F4F910400164A9B /* CityTests.swift */; };
 		04B0292F1F54685000164A9B /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0292E1F54685000164A9B /* PhotoTests.swift */; };
 		04F204221F55C395007A4C0F /* UIImageViewStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F204211F55C395007A4C0F /* UIImageViewStub.swift */; };
+		04F204241F571BCC007A4C0F /* UILabelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F204231F571BCC007A4C0F /* UILabelStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		04B0292C1F4F910400164A9B /* CityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTests.swift; sourceTree = "<group>"; };
 		04B0292E1F54685000164A9B /* PhotoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
 		04F204211F55C395007A4C0F /* UIImageViewStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewStub.swift; sourceTree = "<group>"; };
+		04F204231F571BCC007A4C0F /* UILabelStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				04F204211F55C395007A4C0F /* UIImageViewStub.swift */,
+				04F204231F571BCC007A4C0F /* UILabelStub.swift */,
 			);
 			name = Stubs;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F204241F571BCC007A4C0F /* UILabelStub.swift in Sources */,
 				04B0292A1F4D6A6B00164A9B /* Photo.swift in Sources */,
 				04B028CA1F4A283E00164A9B /* photoiostestTests.swift in Sources */,
 				04B0292F1F54685000164A9B /* PhotoTests.swift in Sources */,
