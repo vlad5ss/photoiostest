@@ -37,6 +37,7 @@
 		04B0292F1F54685000164A9B /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B0292E1F54685000164A9B /* PhotoTests.swift */; };
 		04F204221F55C395007A4C0F /* UIImageViewStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F204211F55C395007A4C0F /* UIImageViewStub.swift */; };
 		04F204241F571BCC007A4C0F /* UILabelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F204231F571BCC007A4C0F /* UILabelStub.swift */; };
+		04F204261F587314007A4C0F /* UICollectionViewStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F204251F587314007A4C0F /* UICollectionViewStub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		04B0292E1F54685000164A9B /* PhotoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
 		04F204211F55C395007A4C0F /* UIImageViewStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewStub.swift; sourceTree = "<group>"; };
 		04F204231F571BCC007A4C0F /* UILabelStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelStub.swift; sourceTree = "<group>"; };
+		04F204251F587314007A4C0F /* UICollectionViewStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			children = (
 				04F204211F55C395007A4C0F /* UIImageViewStub.swift */,
 				04F204231F571BCC007A4C0F /* UILabelStub.swift */,
+				04F204251F587314007A4C0F /* UICollectionViewStub.swift */,
 			);
 			name = Stubs;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				04B029261F4D6A5F00164A9B /* CollectionViewSectionHeader.swift in Sources */,
 				04B029281F4D6A6400164A9B /* CollectionViewController.swift in Sources */,
 				04F204221F55C395007A4C0F /* UIImageViewStub.swift in Sources */,
+				04F204261F587314007A4C0F /* UICollectionViewStub.swift in Sources */,
 				04B0292D1F4F910400164A9B /* CityTests.swift in Sources */,
 				04B0292B1F4D6A6E00164A9B /* Album.swift in Sources */,
 			);
