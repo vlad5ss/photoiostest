@@ -32,5 +32,46 @@ class CollectionViewControllerTests: XCTestCase {
         collectionViewController.viewModel = viewModel
         
         collectionViewController.viewDidLoad()
+        self.waitForExpectations(timeout: 1.0, handler: nil)
 
-    }}
+    }
+    func testNumberOfSections_ValidViewModel_Calls_NumberOfSections_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected numberOfSections() to be called")
+        
+        let collectionViewController = CollectionViewController()
+        collectionViewController.view = UICollectionViewStub()
+        
+        let viewModel = MockCollectionViewModel(view:collectionViewController)
+        viewModel.numberOfSectionsExpectation = expectation
+        
+        collectionViewController.viewModel = viewModel
+        
+        let _ = collectionViewController.numberOfSections(in: collectionViewController.view as! UICollectionView)
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
+    
+    func testNumberOfItemsInSection_ValidViewModel_Calls_NumberOfItemsInSection_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected numberOfItemsInSection() to be called")
+        
+        let collectionViewController = CollectionViewController()
+        
+        let stubCollectionView = UICollectionViewStub()
+        collectionViewController.view = stubCollectionView
+        
+        let viewModel = MockCollectionViewModel(view:collectionViewController)
+        viewModel.numberOfItemsInSectionExpectation = (expectation, 1)
+        
+        collectionViewController.viewModel = viewModel
+        
+        let _ = collectionViewController.collectionView(stubCollectionView, numberOfItemsInSection: 1)
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
+
+
+
+
+}
