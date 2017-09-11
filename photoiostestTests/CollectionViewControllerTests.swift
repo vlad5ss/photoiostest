@@ -71,6 +71,24 @@ class CollectionViewControllerTests: XCTestCase {
         self.waitForExpectations(timeout: 1.0, handler: nil)
     }
 
+    func testCellForItem_ValidViewModel_Calls_CellViewModel_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected cellViewModel() to be called")
+        
+        let stubCollectionView = UICollectionViewStub()
+        
+        let collectionViewController = CollectionViewController()
+        collectionViewController.view = stubCollectionView
+        
+        let viewModel = MockCollectionViewModel(view:collectionViewController)
+        viewModel.cellViewModelExpectation = (expectation, IndexPath(item: 0, section: 0))
+        
+        collectionViewController.viewModel = viewModel
+        
+        let _ = collectionViewController.collectionView(stubCollectionView, cellForItemAt: IndexPath(item: 0, section: 0))
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
 
 
 
