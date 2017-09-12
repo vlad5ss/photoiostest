@@ -89,6 +89,26 @@ class CollectionViewControllerTests: XCTestCase {
         
         self.waitForExpectations(timeout: 1.0, handler: nil)
     }
+    
+    
+    func testViewForSupplementaryElementOfKind_ValidViewModel_Calls_HeaderViewModel_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected headerViewModel() to be called")
+        
+        let collectionViewController = CollectionViewController()
+        
+        let stubCollectionView = UICollectionViewStub()
+        collectionViewController.view = stubCollectionView
+        
+        let viewModel = MockCollectionViewModel(view:collectionViewController)
+        viewModel.headerViewModelExpectation = (expectation, IndexPath(item: 0, section: 0))
+        
+        collectionViewController.viewModel = viewModel
+        
+        let _ = collectionViewController.collectionView(stubCollectionView, viewForSupplementaryElementOfKind: "Any", at: IndexPath(item: 0, section: 0))
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
 
 
 
