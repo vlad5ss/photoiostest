@@ -36,6 +36,24 @@ class CollectionViewCellTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+    func testSetup_ValidViewModel_Calls_Setup_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected setup() to be called")
+        
+        let collectionViewCell = CollectionViewCell()
+        collectionViewCell.imageView = UIImageViewStub()
+        collectionViewCell.captionLabel = UILabelStub()
+        collectionViewCell.shotDetailsLabel = UILabelStub()
+        
+        let viewModel = MockCollectionViewCellViewModel(model:validPhoto)
+        viewModel!.setupExpectation = expectation
+        
+        collectionViewCell.viewModel = viewModel
+        
+        collectionViewCell.setup()
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+    }
+
     
 }
