@@ -20,16 +20,22 @@ class CollectionViewSectionHeaderTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testSetup_ValidViewModel_Calls_Setup_OnViewModel() {
+        
+        let expectation = self.expectation(description: "expected setup() to be called")
+        
+        let sectionHeader = CollectionViewSectionHeader()
+        sectionHeader.title = UILabelStub()
+        
+        let viewModel = MockCollectionViewSectionHeaderViewModel(model:"ABCD")
+        viewModel!.setupExpectation = expectation
+        
+        sectionHeader.viewModel = viewModel
+        
+        sectionHeader.setup()
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
     }
     
 }
+
