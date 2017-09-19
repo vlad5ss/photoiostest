@@ -10,9 +10,11 @@ import XCTest
 
 class CollectionViewModelTests: XCTestCase {
     
+    fileprivate var mockCollectionViewController:MockCollectionViewController?
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        mockCollectionViewController = MockCollectionViewController()
     }
     
     override func tearDown() {
@@ -20,16 +22,28 @@ class CollectionViewModelTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+}
+
+// MARK: initialization tests
+extension CollectionViewModelTests {
+    
+    func testInit_ValidView_InstantiatesObject() {
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertNotNil(viewModel)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testInit_ValidView_CopiesViewToIvar() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        
+        if let lhs = mockCollectionViewController, let rhs = viewModel.view as? MockCollectionViewController {
+            XCTAssertTrue(lhs === rhs)
         }
     }
     
+    func testInit_ValidView_AlbumIVarIsNotNil() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertNotNil(viewModel.photoAlbum)
+    }
+    
 }
+
