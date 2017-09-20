@@ -47,3 +47,16 @@ extension CollectionViewModelTests {
     
 }
 
+// MARK: performInitialViewSetup tests
+extension CollectionViewModelTests {
+    
+    func testPerformInitialViewSetup_Calls_SetNavigationTitle_OnCollectionViewController() {
+        let expectation = self.expectation(description: "expected setNavigationTitle() to be called")
+        mockCollectionViewController!.expectationForSetNavigationTitle = expectation
+        
+        let viewModel = CollectionViewModel(view:mockCollectionViewController!)
+        viewModel.performInitialViewSetup()
+        
+        self.waitForExpectations(timeout: 1.0, handler: nil)
+        
+    }}
