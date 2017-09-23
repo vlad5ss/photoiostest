@@ -85,3 +85,16 @@ extension CollectionViewModelTests {
 
 
 }
+
+
+// MARK: numberOfSections  tests
+extension CollectionViewModelTests {
+    
+    func testNumberOfSections_ValidViewModelWithAlbum_ReturnsNumberOfCitiesInAlbum() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        XCTAssertEqual(viewModel.numberOfSections(), viewModel.photoAlbum!.cities!.count)
+    }
+    
+    
+}
+
