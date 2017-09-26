@@ -105,3 +105,15 @@ extension CollectionViewModelTests {
     
 }
 
+
+// MARK: numberOfItemsInSection tests
+extension CollectionViewModelTests {
+    
+    func testNumberOfItemsInSection_ValidViewModelNilAlbum_ReturnsZero() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        viewModel.photoAlbum = nil
+        
+        XCTAssertEqual(viewModel.numberOfItemsInSection(0), 0)
+}
+
+}
