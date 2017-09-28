@@ -121,6 +121,12 @@ extension CollectionViewModelTests {
         
         XCTAssertEqual(viewModel.numberOfItemsInSection(0), 0)
     }
+    func testNumberOfItemsInSection_NegtiveSectionIndex_ReturnsZero() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        
+        XCTAssertEqual(viewModel.numberOfItemsInSection(-1), 0)
+    }
     
+
 
 }
