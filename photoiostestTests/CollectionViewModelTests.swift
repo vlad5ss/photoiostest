@@ -132,6 +132,11 @@ extension CollectionViewModelTests {
         XCTAssertEqual(viewModel.numberOfItemsInSection(1000), 0)
     }
 
+    func testNumberOfItemsInSection_ValidSectionIndex_ReturnsExpectedValue() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        
+        XCTAssertEqual(viewModel.numberOfItemsInSection(0), viewModel.photoAlbum!.cities![0].photos!.count)
+    }
 
 
 }
