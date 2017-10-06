@@ -156,5 +156,11 @@ extension CollectionViewModelTests {
         
         XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0, section: 0)))
     }
+    func testCellViewModel_ValidViewModelNilPhotos_ReturnsNil() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        viewModel.photoAlbum!.cities![0].photos = nil
+        
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0, section: 0)))
+    }
 
 }
