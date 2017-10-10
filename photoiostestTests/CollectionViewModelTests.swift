@@ -162,5 +162,10 @@ extension CollectionViewModelTests {
         
         XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0, section: 0)))
     }
+    func testCellViewModel_NegtiveRowIndex_ReturnsNil() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: -1, section: 0)))
+    }
 
 }
