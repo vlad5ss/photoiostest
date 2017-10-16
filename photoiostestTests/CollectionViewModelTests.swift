@@ -177,6 +177,10 @@ extension CollectionViewModelTests {
         
         XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 1000, section: 0)))
     }
- 
+    func testCellViewModel_OutOfBoundsSectionIndex_ReturnsNil() {
+        let viewModel =  CollectionViewModel(view:mockCollectionViewController!)
+        
+        XCTAssertNil(viewModel.cellViewModel(indexPath:IndexPath(row: 0, section: 1000)))
+    }
 
 }
