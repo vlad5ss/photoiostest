@@ -193,7 +193,12 @@ extension CollectionViewModelTests {
         let rowIndex = 0
         let sectionIndex = 0
         
- 
+        let cellViewModel = viewModel.cellViewModel(indexPath:IndexPath(row: rowIndex, section: sectionIndex))
+        
+        let expectedModelObject = viewModel.photoAlbum!.cities![sectionIndex].photos![rowIndex]
+        
+        XCTAssertEqual(cellViewModel!.photo, expectedModelObject)
+
     }
 
 }
